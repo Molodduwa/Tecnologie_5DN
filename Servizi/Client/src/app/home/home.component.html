@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md" *ngFor="let s of suvs">
+      <div class="card text-center" style="width:500px">
+        <img class="card-img-top" src={{s.immagine}}  alt="Card image" class="img-fluid mx-auto d-block"  width="600" height="300">
+        <div class="card-body" >
+
+          <h4 class="card-title">{{s.nome}}</h4>
+          <p class="card-text"> {{s.descrizione}}</p>
+        <p class="card-text">Prezzo: {{s.prezzo}}.000 Euro</p>
+        <p class="card-text">Velocità massima: {{s.velocitaMassima}} </p>
+        <p class="card-text">Accelerazione: {{s.accelerazione}} </p>
+        <p class="card-text">Posti e Porte: {{s.postiEporte}}</p>
+        <a href="#" class="btn btn-primary">Compra ora!</a>
+      </div>
+    </div>
+  </div>
+</div>
